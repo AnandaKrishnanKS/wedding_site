@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Dancing+Script:wght@600&family=Great+Vibes&family=Manrope&family=Noto+Sans+JP:wght@900&family=Noto+Sans+Mende+Kikakui&family=Noto+Serif:wght@700&family=Nunito:ital,wght@1,600&family=Oswald:wght@500&family=Poppins:wght@400;500;600&family=Raleway&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    scroll-behavior:smooth;
+    font-family: 'Charm', cursive;
+
+}
+
+.headingstyle{
+    font-size:2.5rem;
+    font-family: 'Great Vibes', cursive;
+}
+.maintxtstyle{
+    font-size: 1.6rem;
+    font-family: 'Dancing Script', cursive;
+}
+.txtstyle{
+    font-size: 1.2rem;
+}
+
+.timeDisplay div{
+    flex-basis: 6.2rem;
+}
+.timeDisplay div p{
+    font-size: 3rem;
+    margin-bottom: -20px;
+}
+.timeDisplay div span{
+    font-size: .8rem;
+}
+
+.goDownbtn{
+    background-color: #f2c3ff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 50%;
+    font-size:1.5rem;
+}
+.imagewidth{
+    width: 10rem;
+}
+
+#section1{
+    z-index:-1;
+    height: 100vh;
+    position:fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    animation: animate 16s ease-in-out infinite;
+    background-size:contain;
+    
+}
+@keyframes animate {
+    0%,100%{
+        background-image: url("./imgs/bgmimage4.jpeg");
+    }
+    25%{
+        background-image: url("./imgs/bgmimage2.jpeg");
+    }
+    50%{
+        background-image: url("./imgs/bgmimage3.jpeg");
+    }
+    100%{
+        background-image: url("./imgs/bgmimage1.jpeg");
+    }
+}
+
+@media(min-width:450px) {
+
+    #section2{
+        position: relative;
+    }
+
+    #section1{
+        animation: animate 16s ease-in-out infinite;
+        background-size: cover;
+    }
+    @keyframes animate {
+        0%,100%{
+            background-image: url("./imgs/bgimage1.jpeg");
+        }
+        25%{
+            background-image: url("./imgs/bgimage2.jpeg");
+        }
+        50%{
+            background-image: url("./imgs/bgimage3.jpeg");
+        }
+        100%{
+            background-image: url("./imgs/bgimage2.jpeg");
+        }
+    }
+
+.couplename{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagewidth{
+    width: 15rem;
+}
+
+.headingstyle{
+    font-size:5rem;
+  
+}
+.maintxtstyle{
+    font-size: 2.8rem;
+ 
+}
+.txtstyle{
+    font-size: 2rem;
+}
+
+}
+
